@@ -3,7 +3,7 @@
 import { isValid, ZodError } from "zod";
 import { signUpSchema } from "~/schemas";
 import { db } from "~/server/db";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcrypt";
 import { redirect } from "next/navigation";
 import { signIn, signOut } from "~/server/auth";
 import { AuthError } from "next-auth";
